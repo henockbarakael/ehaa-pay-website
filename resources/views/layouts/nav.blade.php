@@ -11,8 +11,8 @@
         <li>
             <a href="#" class="bg-blue-btn">
                 <span class="btn-inner">
-                    <span class="btn-normal-text">Discutons</span>
-                    <span class="btn-hover-text">Discutons</span>
+                    <span class="btn-normal-text">Inscription</span>
+                    <span class="btn-hover-text">Inscription</span>
                 </span>
             </a>
         </li>
@@ -20,8 +20,8 @@
         <li>
             <a href="#" class="bg-blue-btn sign-in-btn">
                 <span class="btn-inner">
-                    <span class="btn-normal-text">Se Connecter</span>
-                    <span class="btn-hover-text">Se Connecter</span>
+                    <span class="btn-normal-text">Connexion</span>
+                    <span class="btn-hover-text">Connexion</span>
                 </span>
             </a>
         </li>

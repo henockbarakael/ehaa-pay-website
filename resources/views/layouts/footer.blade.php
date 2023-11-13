@@ -52,7 +52,7 @@
             <div class="row align-items-center">
                 <div class="col-sm-6">
                     <div class="footer-copyright footer-copyright-dark">
-                        <p>Copyright <a href="#">Ehaa-Pay</a> 2023, All right reserved</p>
+                        <p>Copyright <a href="#">Ehaa-Pay</a> <script>document.write(new Date().getFullYear())</script>, All right reserved</p>
                     </div>
                 </div>
                 <div class="col-sm-6">

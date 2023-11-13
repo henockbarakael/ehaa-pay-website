@@ -41,7 +41,7 @@
        <section class="coroprate-banner-section">
         <div class="overlay">
             <div class="corporate-banner-text">
-                <h4 class="text-white text-center">Nous sommes Ehaa-Pay</h4>
+                <h4 class="text-white text-center" style="text-decoration: none">Ehaa-Pay</h4>
                 <h1 class="text-white text-center" >Processeur de paiement</h1>
                 <p class="text-white text-center">Facilitez vos paiements en ligne avec Ehaa-Pay - La simplicité à portée de clic !</p>
                 <a href="#" class="corporate-banner-btn">
@@ -275,10 +275,67 @@
             </div>
         </div>
     </section>
-    <!-- Our Values Section End -->              
+    <!-- Our Values Section End --> 
+    
+    <!-- Stay connect Section Start -->
+    <section class="stay-connect-section">
+        <div class="container">
+            <div class="stay-connect-content">
+                <div class="stay-connect-round-shape">
+                    <img src="{{ asset('assets/images/app/stay-connect-round-shape.png')}}" alt="icon">
+                </div>
+                <img src="{{ asset('assets/images/app/stay-connect-mash-grade.png')}}" alt="img" class="stay-connect-mash-grade">
+                
+                <div class="section-title text-center mb-0">
+                    <h2 class="title text-white" >Restez connecté où que vous soyez.</h2>
+                    <h5 class="dm-sans text-white">L'application Ehaa-Pay est disponible sur iOS et Android.</h5>
+                </div>
+                
+                <div class="stay-connect-btns">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="https://play.google.com" target="_blank">
+                                <img src="{{ asset('assets/images/os-store/play_store.svg')}}" alt="playstore">
+                                <h5 class="dm-sans">
+                                    <span>Download on</span>
+                                    Google Play
+                                </h5>
+                            </a>
+                            <div class="qr-code">
+                                <div class="qr-code-img">
+                                    <img src="{{ asset('assets/images/app/play-store-qr-code.png')}}" alt="qu-code">
+                                </div>
+                                <p class="text-white">43M+ Downloads</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://www.apple.com/app-store" target="_blank">
+                                <img src="{{ asset('assets/images/os-store/app_store.svg')}}" alt="playstore">
+                                <h5 class="dm-sans">
+                                    <span>Download on</span>
+                                    App Store
+                                </h5>
+                            </a>
+                            <div class="qr-code">
+                                <div class="qr-code-img">
+                                    <img src="{{ asset('assets/images/app/app-store-qr-code.png')}}" alt="qu-code">
+                                </div>
+                                <p class="text-white">25M+ Downloads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="stay-connect-mobile-img">
+        <img src="{{ asset('assets/images/app/stay-connect-mockup.png')}}" alt="img">
+    </div>
+    <!-- Stay connect Section End -->
            
     <!-- testiminials section start -->
-    <section class="corporate-testiminials-section">
+    {{-- <section class="corporate-testiminials-section">
         <!-- <img src="./{{ asset('assets/images/corporate/testimonial-bg.jpg')}}" alt="img" class="corporate-testimonial-bg" /> -->
         <div class="overlay">
             <div class="container">
@@ -333,7 +390,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- testiminials section End -->
            
     <!-- Brand Slider Section Start -->

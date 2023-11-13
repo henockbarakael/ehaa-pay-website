@@ -55,8 +55,8 @@
                                 <li>
                                     <a href="#" class="btn-light-green">
                                         <span class="btn-inner">
-                                            <span class="btn-normal-text">Se Connecter</span>
-                                            <span class="btn-hover-text">Se Connecter</span>
+                                            <span class="btn-normal-text">Connexion</span>
+                                            <span class="btn-hover-text">Connexion</span>
                                         </span>
                                     </a>
                                 </li>
