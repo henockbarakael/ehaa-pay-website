@@ -286,8 +286,8 @@
                 </div>
                 <img src="{{ asset('assets/images/app/stay-connect-mash-grade.png')}}" alt="img" class="stay-connect-mash-grade">
                 
-                <div class="section-title text-center mb-0">
-                    <h2 class="title text-white mt-3" >Téléchargez notre application</h2>
+                <div class="section-title text-center mb-0 mt-5">
+                    <h2 class="title text-white" >Téléchargez notre application</h2>
                     <h5 class="dm-sans text-white">L'application Ehaa-Pay est disponible sur iOS et Android.</h5>
                 </div>
                 
