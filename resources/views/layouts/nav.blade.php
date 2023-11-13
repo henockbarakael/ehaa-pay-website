@@ -18,7 +18,7 @@
         </li>
 
         <li>
-            <a href="#" class="bg-blue-btn sign-in-btn">
+            <a href="{{route('login')}}" class="bg-blue-btn sign-in-btn">
                 <span class="btn-inner">
                     <span class="btn-normal-text">Connexion</span>
                     <span class="btn-hover-text">Connexion</span>
