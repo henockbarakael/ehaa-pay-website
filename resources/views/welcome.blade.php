@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ehaa-Pay</title>
-
+    <meta name="description" content="Notre service de paiement en ligne vous offre une solution pratique, sécurisée et rapide pour effectuer des transactions financières sur Internet. Que vous souhaitiez acheter des produits, payer des factures, effectuer des dons ou transférer de l'argent, notre service de paiement en ligne vous permet de le faire en toute simplicité.">
+    <meta name="keywords" content="Ehaa, Ehaa-Pay, fintech">
+    <meta property="og:image" content="http://ehaa-pay.com/assets/images/logo/ehaa.png" />
+    <meta property="og:image:secure_url" content="https://ehaa-pay.com/assets/images/logo/ehaa.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="Ehaa-Pay" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="author" content="Henock BARAKAEL | barahenock@gmail.com | +243828584688">
     <!-- favicon included here -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/fav.png')}}" type="image/x-icon">
 
