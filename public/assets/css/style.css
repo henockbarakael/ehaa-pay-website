@@ -24337,6 +24337,37 @@ html.dark-scheme body .creators-details-tab-btns button:hover {
   color: #ffffff;
 }
 
+.show-hide {
+  position: absolute;
+  top: 52px;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.show-hide span {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--theme-deafult);
+}
+.show-hide span.show:before {
+  content: "show";
+}
+.show-hide span:before {
+  content: "hide";
+}
+
+.needs-validation .invalid-feedback {
+  color: #898989;
+}
+.needs-validation .show-hide {
+  right: 30px;
+}
+.needs-validation .invalid-tooltip {
+  top: 10px;
+  right: 10px;
+}
+
+
 .auth-form-section .form-success-btn {
   background: #5ECC62;
   border-radius: 10px;
