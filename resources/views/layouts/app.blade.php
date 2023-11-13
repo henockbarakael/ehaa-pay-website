@@ -1,80 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ehaa-Pay - Connexion</title>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+        <!-- favicon included here -->
+        <link rel="shortcut icon" href="{{ asset('assets/images/logo/fav.png')}}" type="image/x-icon">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+        <!-- apple touch icon included here -->
+        <link rel="apple-touch-icon" href="{{ asset('assets/images/logo/fav.png')}}">
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+        <!-- All css files included here -->
+        <!-- Bootstrap  v5.2.1 css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')}}">
+        <!-- slick slider css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/slick.css')}}">
+        <link rel="stylesheet" href="{{ asset('assets/css/slick-theme.css')}}">
+        <!-- pie progress css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/asPieProgress.min.css')}}">
+        <!-- VenoBox 2.0.4 css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/venobox.min.css')}}">
+        <!-- Light Box css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css')}}">
+        <link href="{{ asset('assets/css/magnific-popup.css')}}" rel="stylesheet">
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
+        <!-- headline.css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/headline.css')}}">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="{{ asset('assets/ajax/libs/font-awesome/6.2.1/css/all.min.css')}}">
+        <!-- custom css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="{{ asset('assets/css/responsive.css')}}">
+    </head>
+    <body>
+        <!-- Preloader -->
+        @include('layouts.preloader')
+        <!-- Preloader -->
+        <div class="auth-body">
             @yield('content')
-        </main>
-    </div>
-</body>
+        </div>
+        <!-- All javascript files included here -->
+        <!-- jQuery v3.6.1 js -->
+        <script src="{{ asset('assets/js/jquery-3.6.1.min.js')}}"></script>
+        <!-- popper v2.11.6 js -->
+        <script src="{{ asset('assets/js/popper.min.js')}}"></script>
+        <!-- Bootstrap  v5.2.1 js -->
+        <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
+        <!-- masonry js -->
+        <script src="{{ asset('assets/js/masonry.pkgd.min.js')}}"></script>
+        <!-- Iconify v3.0.0 js -->
+        <script src="{{ asset('assets/js/iconify.min.js')}}"></script>
+        <!-- modernizr js -->
+        <script src="{{ asset('assets/js/modernizr.js')}}"></script>
+        <!-- slick slider js -->
+        <script src="{{ asset('assets/js/slick.min.js')}}"></script>
+        <!-- swiper slider js --->
+        <script src="{{ asset('assets/js/swiper.min.js')}}"></script>
+        <!-- pie progress js -->
+        <script src="{{ asset('assets/js/jquery-asPieProgress.js')}}"></script>
+        <!-- VenoBox 2.0.4 js -->
+        <script src="{{ asset('assets/js/venobox.min.js')}}"></script>
+        <!-- Splitting js -->
+        <script src="{{ asset('assets/js/splitting.js')}}"></script>
+        <script src="{{ asset('assets/js/splitting-out.js')}}"></script>
+        <!-- jquery.rollNumber js -->
+        <script src="{{ asset('assets/js/jquery.rollNumber.js')}}"></script>
+        <!-- parallax js -->
+        <script src="{{ asset('assets/js/parallax.min.js')}}"></script>
+        <!-- ScrollTrigger 3.11.2 js -->
+        <script src="{{ asset('assets/js/ScrollTrigger.min.js')}}"></script>
+        <!-- Headline.js -->
+        <script src="{{ asset('assets/js/headline.js')}}"></script>
+       <script src="{{ asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+
+        <!-- Image Light box -->
+        <script src="{{ asset('assets/js/lightbox.js')}}"></script>
+        <!-- sticky sidebar js -->
+        <script src="{{ asset('assets/js/sticky-sidebar.js')}}"></script>
+        <!-- Image Loaded js -->
+        <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js')}}"></script>
+        <!-- isotop -->
+        <script src="{{ asset('assets/js/isotope.pkgd.min.js')}}"></script>
+        <!-- darkMood tsx -->
+        <script src="{{ asset('assets/js/dark-mood-js.txt')}}"></script>
+        <!-- custom js -->
+        <script src="{{ asset('assets/js/main.js')}}"></script>
+    </body>
 </html>
